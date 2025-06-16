@@ -41,6 +41,7 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --color-main: #233545;
 }
 
 :root {
@@ -118,5 +119,14 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  .flex_between {
+    @apply flex justify-between items-center;
   }
 }
