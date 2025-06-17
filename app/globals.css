@@ -41,12 +41,12 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-  --color-main: #233545;
+  --color-main: var(--color-main);
 }
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: #eee;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -77,15 +77,35 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --color-main: #ddd;
 }
 
 .dark {
+  /* main background color */
   --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  /* main background color */
+
+  /* any text in app without the specfic customized components*/ 
+  --foreground:oklch(0.985 0 0);
+  /* any text in app without the specfic customized components*/ 
+  
+  /* Card component bg  */
   --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
+  /* Card component bg  */
+
+  /* Card component text inside  */
+  --card-foreground:  oklch(0.985 0 0);
+  /* Card component text inside  */
+
+  
+  /*bg color for any  popover*/
   --popover: oklch(0.205 0 0);
+  /*bg color for any  popover*/
+  
+  /*color for any text in popover*/
   --popover-foreground: oklch(0.985 0 0);
+  /*color for any text in popover*/
+
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
   --secondary: oklch(0.269 0 0);
@@ -98,19 +118,43 @@
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.556 0 0);
+
+  /* bg for charts */
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
+  /* bg for charts */
+
+  /* bg sidebar */
   --sidebar: oklch(0.205 0 0);
+  /* bg sidebar */
+  
+  /* color all text in sidebar */
   --sidebar-foreground: oklch(0.985 0 0);
+  /* color all text in sidebar */
+
   --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: oklch(0.985 0 0);
+
+  /* on hover for bg sideBarMenuButton */
   --sidebar-accent: oklch(0.269 0 0);
+  /* on hover for bg sideBarMenuButton */
+  
+  /* on hover for text sideBarMenuButton */
   --sidebar-accent-foreground: oklch(0.985 0 0);
+  /* on hover for text sideBarMenuButton */
+
+  /* any border in sideBar */
   --sidebar-border: oklch(1 0 0 / 10%);
+  /* any border in sideBar */
+
   --sidebar-ring: oklch(0.556 0 0);
+
+  /* custom */
+  --color-main: #0b71ca28;
+  /* custom */
 }
 
 @layer base {
